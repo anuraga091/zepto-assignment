@@ -101,6 +101,8 @@ function App() {
   return (
     
       <div className="app">
+        <h1>Pick Users</h1>
+
         <div className='input-div' >
           {selectedItems.map(item => (
             <div key={item.id} className={`selected-chip ${highlightedChip === item ? 'highlighted' : ''}`}>
@@ -120,7 +122,7 @@ function App() {
             placeholder={selectedItems.length === 0 ? 'Add new user' : ''}
           />
         </div>
-        {isInputFocused && inputValue && (
+        {isInputFocused && (
           <div className='suggestion-div'>
             { filteredItems.length > 0 ?
               filteredItems.map(item => (
