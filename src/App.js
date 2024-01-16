@@ -117,7 +117,7 @@ function App() {
             onFocus={handleInputFocus}
             
             className='input'
-            placeholder={selectedItems.length === 0 ? 'Type to search' : ''}
+            placeholder={selectedItems.length === 0 ? 'Add new user' : ''}
           />
         </div>
         {isInputFocused && inputValue && (
